@@ -18,7 +18,7 @@ def calcular_precio_producto(coste_producto):
     '''
     # procesos
     coste_producto_comision= coste_producto+(coste_producto*0.5)
-    #print("el valor del producto es.." ,coste_producto_comision)
+    print("el valor del producto es.." ,coste_producto_comision)
     return  coste_producto_comision
     #print("precio del producto...",coste_producto_comision)
 coste_producto = calcular_precio_producto(float(input("digite el costo del producto...")))
