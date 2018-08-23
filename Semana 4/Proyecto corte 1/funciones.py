@@ -1,23 +1,27 @@
-#coste_producto = (float(input("digite el costo del producto...")))
-
 def calcular_precio_producto(coste_producto):
 
     '''
      (float)-> float
     #casos de prueba
     >>> calcular_precio_producto(200)
+    300.0
 
     >>> calcular_precio_producto(300)
+    450.0
 
     >>> calcular_precio_producto(600)
+    900.0
 
 
     :param coste_producto:
     :return:
     '''
     # procesos
-    pass
-
+    coste_producto_comision= coste_producto+(coste_producto*0.5)
+    #print("el valor del producto es.." ,coste_producto_comision)
+    return  coste_producto_comision
+    #print("precio del producto...",coste_producto_comision)
+coste_producto = calcular_precio_producto(float(input("digite el costo del producto...")))
 
 def calcular_precio_servicio(cantidad_horas):
     '''
@@ -78,7 +82,8 @@ def calcular_iva_producto(coste_producto, tasa):
     iva_total= coste_producto*tasa
     print("el iva a cobrar es..",iva_total)
     return iva_total
-#tasa = calcular_iva_producto(coste_producto,float(input("digite la tasa...")))
+    #print("el iva a cobrar es..",iva_total)
+tasa= calcular_iva_producto(coste_producto, float(input("digite la tasa...")))
 # funcion para calcular el iva de un servicio
 def calcular_iva_servicio(cantidad_horas, tasa):
 
@@ -93,7 +98,8 @@ def calcular_iva_servicio(cantidad_horas, tasa):
     iva_servicio = cantidad_horas * tasa
     print("el iva del servicio es de...",iva_servicio)
     return iva_servicio
-#cantidad_horas = calcular_iva_servicio(float(input("digite la cantidad de horas....")), tasa= float(input("digite la tasa para el iva de servicio...")))
+    #print("el iva del servicio es de...",iva_servicio)
+cantidad_horas = calcular_iva_servicio(float(input("digite la cantidad de horas....")), tasa= float(input("digite la tasa para el iva de servicio...")))
 
 def calcular_iva_envio(kilometros, tasa):
 
@@ -109,8 +115,8 @@ def calcular_iva_envio(kilometros, tasa):
     iva_envio = kilometros * tasa
     print("el iva para el envio es...",iva_envio)
     return iva_envio
-
-#kilometros = calcular_iva_envio(float(input("digite los kilometros a recorrer...")), tasa = float(input("digite la tasa a manejar para los kilometros...")))
+    #print("el iva para el envio es...",iva_envio)
+kilometros = calcular_iva_envio(float(input("digite los kilometros a recorrer...")), tasa = float(input("digite la tasa a manejar para los kilometros...")))
 
 
 # funcion para calcular el iva de servicio fuera
@@ -128,8 +134,9 @@ def calcular_iva_servicio_fuera(cantidad_horas, tasa):
     iva_fuera = cantidad_horas * tasa
     print(" iva a fuera por servicio es...",iva_fuera)
     return iva_fuera
+    #print(" iva a fuera por servicio es...",iva_fuera)
 
-#cantidad_horas = calcular_iva_servicio_fuera(float(input("digite las horas extras...")),float(input("digite la tasa para las horas extras...")))
+cantidad_horas = calcular_iva_servicio_fuera(float(input("digite las horas extras...")),float(input("digite la tasa para las horas extras...")))
 
 #calcula el recaudo total de todos los locales
 def calcular_recaudo_locales(coste_producto_1,
