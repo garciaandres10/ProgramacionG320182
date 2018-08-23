@@ -145,7 +145,7 @@ def calcular_recaudo_locales(coste_producto_1,
     '''
     # casos de prueba:
 
-    :param coste_producto_1: costo del primer producto
+    :param coste_producto_1: costo del primer producto.
     :param coste_producto_2: costo del segundo producto
     :param coste_producto_3: costo del tercer producto
     :return: el costo total del producto
