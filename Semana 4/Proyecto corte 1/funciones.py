@@ -51,7 +51,7 @@ def calcular_iva_servicio(cantidad_horas, tasa):
    38.0
 
    :param cantidad_horas:
-   :param tasa:
+   :param tasa::
    :param iva_servicio:
    :return:
    '''
