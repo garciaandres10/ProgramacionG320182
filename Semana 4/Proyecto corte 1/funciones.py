@@ -24,17 +24,27 @@ def calcular_precio_producto(coste_producto):
 coste_producto = calcular_precio_producto(float(input("digite el costo del producto...")))
 
 def calcular_precio_servicio(cantidad_horas):
+   '''
+    calcular el precio del servicio por hora
+
+    >>>calcular_precio_servicio(20)
+    2000000
+
+    >>>calcular_precio_servicio(12)
+    1200000
+
+    >>>calcular_precio_servicio(22)
+    2200000
+
+    : param cantidad_horas: (num) cantidad de horas
+    : return: (num) precio servicio total por horas
+
     '''
-    >>> calcular_precio_servicio(10)
 
-    >>> calcular_precio_servicio(20)
-
-    >>> calcular_precio_servicio(50)
-
-    :param cantidad_horas:
-    :return:
+    coste_precio_servicio= cantidad_horas*100000
+    return  coste_precio_servicio
     '''
-    pass
+    
 
 
 def calcular_precio_servicio_extras(cantidad_horas):
