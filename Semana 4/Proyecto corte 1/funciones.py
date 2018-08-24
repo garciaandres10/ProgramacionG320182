@@ -1,7 +1,7 @@
 def calcular_precio_producto(coste_producto):
 
     '''
-     (float)-> float
+      (float)-> float
     #casos de prueba
     >>> calcular_precio_producto(200)
     300.0
@@ -16,7 +16,8 @@ def calcular_precio_producto(coste_producto):
     :param coste_producto:
     :return:
     '''
-    # procesos
+    # procesos //
+
     coste_producto_comision= coste_producto+(coste_producto*0.5)
     print("el valor del producto es.." ,coste_producto_comision)
     return  coste_producto_comision
