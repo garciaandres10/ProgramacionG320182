@@ -71,7 +71,7 @@ def calcular_precio_servicio_extras(cantidad_horas):
     coste_precio_servicio_extras= tarifa_horas+(tarifa_horas*0.25)
     return  coste_precio_servicio_extras
 
-cantidad_horas = calcular_precio_servicio_extras(float(print("horas extras")))
+cantidad_horas = calcular_precio_servicio_extras(float(input("horas extras")))
 
 
 
