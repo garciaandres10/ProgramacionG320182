@@ -63,11 +63,30 @@ def calcular_costo_envio(kilometros):
     :return:
     '''
     pass
-
+# funcion para calcular producto fuera
 def calcular_precio_producto_fuera(coste_producto,
                                    kilometros):
+     '''
+    calcular el precio del producto mas el valor por kilometros
 
-    pass
+    >>> calcular_precio_producto_fuera(1000,25)
+    3875
+
+    >>> calcular_precio_producto_fuera(2000, 100)
+    13500
+
+    >>> calcular_precio_producto_fuera(3000, 329)
+    40835
+
+    : param kilometros: (num) cantidad de kilometros a la que se envia el producto
+    :param coste_producto: (num) precio base del producto
+    : return: (num) precio producto por fuera
+
+    '''
+
+    coste_envio= kilometros * 115
+    precio_producto_envio = coste_producto+coste_envio
+    return  precio_producto_envio
 
 
 # funcion para calcular el iba de un producto
