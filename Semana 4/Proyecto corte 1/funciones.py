@@ -41,38 +41,56 @@ def calcular_precio_servicio(cantidad_horas):
 
     '''
 
-    coste_precio_servicio= cantidad_horas*100000
+    coste_precio_servicio = cantidad_horas*100000
     return  coste_precio_servicio
-    '''
-    
 
 
 def calcular_precio_servicio_extras(cantidad_horas):
     '''
-    >>> calcular_precio_servicio_extras(15)
+    calcular el precio del servicio por hora mas el 25%
 
-    >>> calcular_precio_servicio_extras(25)
+    >>>calcular_precio_servicio_extras(4)
+    500000.0
 
-    >>> calcular_precio_servicio_extras(35)
+    >>>calcular_precio_servicio_extras(6)
+    750000.0
 
-    :param cantidad_horas:
-    :return:
+    >>>calcular_precio_servicio_extras(9)
+    1125000.0
+
+    : param cantidad_horas: (num) cantidad de horas
+    : return: (num) precio servicio total por horas mas 25%
+
     '''
-    pass
+
+    tarifa_horas=(cantidad_horas*100000)
+    coste_precio_servicio_extras= tarifa_horas+(tarifa_horas*0.25)
+    return  coste_precio_servicio_extras
+
 
 
 def calcular_costo_envio(kilometros):
     '''
-    >>> calcular_costo_envio(50)
+    calcular el precio del envio
 
-    >>> calcular_costo_envio(60)
+    >>>calcular_costo_envio(25)
+    2875
 
-    >>> calcular_costo_envio(70)
+    >>>calcular_costo_envio(100)
+  11500
 
-    :param kilometros:
-    :return:
+    >>>calcular_costo_envio(329)
+   37835
+
+    : param kilometros: (num) cantidad de kilometros a la que se envia el producto
+    : return: (num) precio del envio
+
     '''
-    pass
+
+
+    coste_envio= kilometros*115
+    return  coste_envio
+
 # funcion para calcular producto fuera
 def calcular_precio_producto_fuera(coste_producto,
                                    kilometros):
@@ -94,7 +112,7 @@ def calcular_precio_producto_fuera(coste_producto,
 
     '''
 
-    coste_envio= kilometros * 115
+    coste_envio = kilometros * 115
     precio_producto_envio = coste_producto+coste_envio
     return  precio_producto_envio
 
